@@ -12,14 +12,6 @@ module RSpec
         store(:stubs, [])
       end
 
-      def expectations
-        self[:expectations]
-      end
-
-      def stubs
-        self[:stubs]
-      end
-
       def visibility
         if Mock === @object
           'public'
