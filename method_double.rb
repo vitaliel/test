@@ -4,7 +4,6 @@ module RSpec
       attr_reader :method_name
 
       def initialize(object, method_name, proxy)
-        @proxy = proxy
         @stashed = false
         store(:expectations, [])
         store(:stubs, [])
